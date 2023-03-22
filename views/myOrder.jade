@@ -1,0 +1,43 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+    title Hamila Online Restaurant!
+  body
+    nav.links
+      // <div class="AboutUs underlineAnimation"><a href="">About Us</a></div>
+      .OurMenu.underlineAnimation
+        a(href='menu') Our Menu
+      .HamilaLogo
+        a(href='/')
+          img(src='/images/HamilatmlogoVer3.png' alt='Hamila' width='170')
+      .contact.underlineAnimation
+        a(href='login') Contact Info
+      .shopbasket
+        a(href='myOrder')
+          img(src='/images/shopbasketwhite.png' alt='shopping_basket' height='40')
+    .bodyEdit
+      //
+        Denna div använder samma class som i contact.html så de ser likadana ut. Däremot
+        är innehållet ändrat
+      .contactContainer
+        h1.center Cart
+        // Dessa är så kallade "break tags", för att separera texterna i separata rows
+        br
+        br
+        p.center There are no meals placed to order
+        // Denna hr tag skapar en underline till html funktionerna under och över denna
+        hr
+        button.checkoutButton Checkout
+    footer
+      .footerFlex
+        a.hoverEffect(href='#') Contact Us
+        a.hoverEffect(href='#') FAQ
+        a.hoverEffect(href='#') Our policy
+      .footerFlex2
+        a.hoverEffect(href='#') Terms and Conditions
+        a.hoverEffect(href='#') Report Something
+        a.hoverEffect(href='#') Work with us!
+      p.copyrightCenter © Adam Hama Gareb 2022

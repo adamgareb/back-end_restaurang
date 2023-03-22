@@ -1,0 +1,48 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+    title Hamila Online Restaurant!
+    //
+      I denna navigation bar så har vi de olika anchor tags som länkar till varsin html fil
+      här i header sektionen av sidan
+  body
+    nav.links
+      .OurMenu.underlineAnimation
+        a(href='menu') Our Menu
+      .HamilaLogo
+        a(href='./')
+          img(src='/images/HamilatmlogoVer3.png' alt='Hamila' width='170')
+      .contact.underlineAnimation
+        a(href='login') Contact Info
+      .shopbasket
+        a(href='myOrder')
+          img(src='/images/shopbasketwhite.png' alt='shopping_basket' height='40')
+    //
+      Den här div:en med classen bodyEdit är som "huvuddelen" av min body då den innehåller
+      framförallt bakgrundsbilden som täcker hela bodyn, och intui den så har jag andra form av div
+      och html funktioner
+    .bodyEdit
+      .welcome_text
+        // Denna div har några CSS animationer vilket får allt i innehållet att animeras
+        .welcome_animation
+          h1.welcomeAdjust Welcome #{title}
+        br
+        p.welcome_animation Your favourite halal online Restaurant
+        a.orderAnchor(href='/menu') Start order here >>
+    footer
+      //
+        I denna div i footern så har vi en div som har display:flex I CSS:en vilket håller alla
+        dessa anchor tags på plats
+      .footerFlex
+        a.hoverEffect(href='#') Contact Us
+        a.hoverEffect(href='#') FAQ
+        a.hoverEffect(href='#') Our policy
+      // Samma gäller för denna div
+      .footerFlex2
+        a.hoverEffect(href='#') Terms and Conditions
+        a.hoverEffect(href='#') Report Something
+        a.hoverEffect(href='#') Work with us!
+      p.copyrightCenter © Adam Hama Gareb 2022

@@ -1,0 +1,58 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+    title Hamila Online Restaurant!
+  body
+    nav.links
+      .OurMenu.underlineAnimation
+        a(href='menu') Our Menu
+      .HamilaLogoContact
+        a(href='./')
+          img(src='/images/HamilatmlogoVer3.png' alt='Hamila' width='170')
+      .contact.underlineAnimation
+        a(href='login') Contact Info
+      .shopbasket
+        a(href='myOrder')
+          img(src='/images/shopbasketwhite.png' alt='shopping_basket' height='40')
+    .bodyEditLogin
+      //
+        Denna div används som en container till innehållet, i CSS så har vi gett den
+        bakgrundfärg och border, för att se tydligt vad div:en gör
+      .contactContainer
+        h1.center Log in
+        .contactPadding
+          form(action='/login' method='post')
+            label(for='username') Username  
+            input(type='text' placeholder='Enter Username' name='username' required='required')
+            br
+            br
+            label(for='password') Password  
+            input(type='password' placeholder='Enter Password' name='password' required='required')
+            br
+            br
+            br
+            //
+              Slutligen lades några buttons till för att användaren ska ha möjligheten att
+              logga in eller återställe sitt svar
+            button.buttonEdit(type='submit') Login
+          br
+          button.buttonEdit Återställ
+          p= errorMsg
+        br
+        h2.center No account?  
+        button.registerCenter
+          a(href='register') Register Here!
+        // En bild lades till bredvid formulären med img src och en paragraph under den
+    footer
+      .footerFlex
+        a.hoverEffect(href='#') Contact Us
+        a.hoverEffect(href='#') FAQ
+        a.hoverEffect(href='#') Our policy
+      .footerFlex2
+        a.hoverEffect(href='#') Terms and Conditions
+        a.hoverEffect(href='#') Report Something
+        a.hoverEffect(href='#') Work with us!
+      p.copyrightCenter © Adam Hama Gareb 2022

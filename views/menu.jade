@@ -1,0 +1,59 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+    title Hamila Online Restaurant!
+  body
+    nav.links
+      .OurMenu.underlineAnimation
+        a(href='menu') Our Menu
+      .HamilaLogo
+        a(href='./')
+          img(src='/images/HamilatmlogoVer3.png' alt='Hamila' width='170')
+      .contact.underlineAnimation
+        a(href='login') Contact Info
+      .shopbasket
+        a(href='myOrder')
+          img(src='/images/shopbasketwhite.png' alt='shopping_basket' height='40')
+    .bodyEdit
+      .welcome_text
+        .welcome_animation
+          h1.menuh1Center Our menu
+      //
+        Här har vi en "huvud div" med namn "parentContainer" som hjälper "child div:erna" hålla
+        sig på plats då denna har display:flex och justify-content i CSS:en
+      .parentContainer
+        //
+          I div:erna med "childContainer" så innehåller alla en img src för att lägga en bild,
+          h3 för att lägga en liten header text, paragraph tag och slutlitgen en h3 igen med denna
+          gång med en anchor tag inuti. Samma gäller för alla dessa div med "childContainer"
+        .childContainer
+          img.menuImgCenter(src='/images/Halalstylestreetfood.jpg' alt='Dish1' height='170' width='190')
+          h3.foodName Halali Street Food
+          p.foodPrice $13.99
+          h3.addToCart
+            a(href='#') Add to Cart
+        .childContainer
+          img.menuImgCenter(src='/images/Alpizza.jpg' alt='Dish 2' height='170' width='190')
+          h3.foodName The "Al Pizza"
+          p.foodPrice $59.99
+          h3.addToCart
+            a(href='#') Add to Cart
+        .childContainer
+          img.menuImgCenter(src='/images/kebabtallrik.jpg' alt='Dish3' height='170' width='190')
+          h3.foodName The Hamila Special
+          p.foodPrice $99.98
+          h3.addToCart
+            a(href='#') Add to Cart
+    footer
+      .footerFlex
+        a.hoverEffect(href='#') Contact Us
+        a.hoverEffect(href='#') FAQ
+        a.hoverEffect(href='#') Our policy
+      .footerFlex2
+        a.hoverEffect(href='#') Terms and Conditions
+        a.hoverEffect(href='#') Report Something
+        a.hoverEffect(href='#') Work with us!
+      p.copyrightCenter © Adam Hama Gareb 2022
